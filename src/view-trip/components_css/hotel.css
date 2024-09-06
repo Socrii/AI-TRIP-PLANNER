@@ -1,0 +1,87 @@
+/* Hotel.css */
+
+.hotel-container {
+  margin-top: 2rem;
+}
+
+.hotel-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #2d3748; /* Dark gray for the title */
+}
+
+.hotel-card {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #f7fafc; /* Light background for card */
+  border: 1px solid #e2e8f0; /* Light gray border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effect */
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.hotel-icon {
+  font-size: 3rem;
+  color: #4a5568; /* Darker gray for icon */
+  margin-right: 1rem;
+}
+
+.hotel-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #1a202c; /* Dark color for hotel name */
+}
+
+.hotel-address {
+  font-size: 1rem;
+  color: #2d3748; /* Darker gray for address */
+}
+
+.map-link {
+  display: flex;
+  align-items: center;
+  color: #3182ce; /* Blue color for map link */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
+
+.map-icon {
+  font-size: 1.5rem;
+  color: #4a5568; /* Dark gray for map icon */
+  margin-right: 0.5rem;
+}
+
+.hotel-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #2d3748; /* Darker gray for info */
+  margin-bottom: 0.5rem;
+}
+
+.hotel-description {
+  font-size: 1rem;
+  color: #4a5568; /* Dark gray for description */
+}

@@ -1,18 +1,21 @@
-import { useState } from 'react'
-import { Button } from './components/ui/button'
-import './App.css'
-import Hero from './components/custom/Hero'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CreateTrip from './create-trip/index';
+import ViewTrip from './view-trip/index';
+import Hero from './components/custom/Hero';
+import './App.css'; 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-        <Hero/>
-        {/* Hero section  */}
-
-    </>
-  )
+    <BrowserRouter>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/create-trip" element={<CreateTrip />} />
+          <Route path="/view-trip/:tripId" element={<ViewTrip />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
