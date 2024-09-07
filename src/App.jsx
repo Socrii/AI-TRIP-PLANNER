@@ -7,7 +7,8 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <div className="container">
+
+      <div className="app-container">
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/create-trip" element={<CreateTrip />} />
@@ -15,6 +16,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+    
   );
 }
 

@@ -73,23 +73,23 @@ function Header() {
   };
 
   return (
-    <div className='p-4 shadow-md flex justify-between items-center px-10 bg-blue-100'>
+    <div className='header-container shadow-md flex justify-between items-center px-10'>
       <Logo />
       
       <div className='flex items-center gap-4'>
         {isAuthenticated ? (
           <>
             <a href='/'>
-              <Button variant="outline" className="rounded-full bg-blue-500 text-white hover:bg-blue-600">
+              <Button variant="outline" className="rounded-full bg-white text-sky-600 border-sky-400 hover:bg-sky-200">
                 Home
               </Button>
             </a>
             <Popover>
               <PopoverTrigger>
-                <img src={user?.picture} className='h-12 w-12 rounded-full border-2 border-blue-300' alt="User" />
+                <img src={user?.picture} className='h-12 w-12 rounded-full border-2 border-sky-300' alt="User" />
               </PopoverTrigger>
-              <PopoverContent className='p-4'>
-                <h2 className="cursor-pointer text-blue-500 hover:text-blue-700" onClick={handleLogout}>
+              <PopoverContent className='p-4 bg-white text-sky-600'>
+                <h2 className="cursor-pointer hover:text-sky-800" onClick={handleLogout}>
                   Logout
                 </h2>
               </PopoverContent>
@@ -98,7 +98,7 @@ function Header() {
         ) : (
           <Button 
             onClick={() => setOpenDialog(true)} 
-            className="bg-blue-500 text-white hover:bg-blue-600 w-full max-w-xs"
+            className="bg-white text-sky-600 hover:bg-sky-200 w-full max-w-xs"
           >
             Sign-In
           </Button>
@@ -106,16 +106,16 @@ function Header() {
       </div>
 
       <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-        <DialogContent className='p-8 bg-blue-50'>
+        <DialogContent className='p-8 bg-white text-sky-600'>
           <DialogHeader>
             <DialogTitle className='text-xl font-semibold'>Sign in with Google</DialogTitle>
           </DialogHeader>
-          <DialogDescription className='text-gray-600'>
+          <DialogDescription className='text-gray-700'>
             <Logo />
             <p className='mt-2'>Sign in to the App with Google Authentication securely</p>
             <Button
               onClick={login}
-              className="w-full mt-5 flex gap-4 items-center bg-blue-500 text-white hover:bg-blue-600"
+              className="w-full mt-5 flex gap-4 items-center bg-sky-500 text-white hover:bg-sky-400"
             >
               Sign in with Google <FcGoogle size={24} className="ml-2" />
             </Button>
@@ -126,4 +126,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Header;

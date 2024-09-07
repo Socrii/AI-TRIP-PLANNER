@@ -145,7 +145,7 @@ function CreateTrip() {
   }, [isAuthenticated]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-indigo-100 p-8 flex flex-col items-center">
+    <div className="min-h-screen bg-cover bg-center p-8 flex flex-col items-center" style={{ backgroundImage: 'url(/path-to-your-background-image.jpg)' }}>
       <div className="max-w-4xl w-full bg-white shadow-2xl rounded-3xl p-10 mb-8 transform hover:scale-105 transition-transform duration-300">
         <h1 className="font-bold text-4xl mb-6 text-indigo-800 text-center">
           Plan Your Dream Trip 🌍✈️
