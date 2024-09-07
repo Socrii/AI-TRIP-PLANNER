@@ -1,8 +1,10 @@
-# React + Vite
+https://aitripplanner.netlify.app/
+![image](https://github.com/user-attachments/assets/6bf8cc44-2ab4-4e24-804f-8ad0b67b2051)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/236ce1c6-f6a4-4574-a883-d4b6cc95e5ee)
+
+
+
+![image](https://github.com/user-attachments/assets/03408bf1-d525-420d-bd7a-e914d6222d9c)
